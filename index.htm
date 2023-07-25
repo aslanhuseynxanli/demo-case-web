@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <header class="header ">
+    <div class="flex navbar justify-between pt-20 ">
+      <div class="flex">
+        <div class="flex justify-between btndiv">
+          <p class="logo py-10 " style="padding-top: 6px;">LOGO</p>
+
+          <button onclick="openmenu()" class=" d-none btn"> <i id="hamburger" class="  fa-solid fa-bars"></i> </button>
+         
+          <div class="mobile-menu" id="menu">
+            <div style="margin-left: 30px; margin-top: 20px;">
+              <h2>LOGO</h2>
+              <p style="padding-top: 20px; padding-bottom: 20px;">Menu 1</p>
+              <p>Menu 2</p>
+            </div>
+            <select class="slct" style="margin-bottom: 30px; margin-left: 30px;">
+              <option class="slct">AZ</option>
+              <option>TR</option>
+              <option>Eng</option>
+            </select>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="flex list-none">
+            <li>Menu1</li>
+            <li class="py-10">Menu2</li>
+            <select class="slct">
+              <option class="slct">AZ</option>
+              <option>TR</option>
+              <option>Eng</option>
+            </select>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="dropdown-menu">
+        <div class="dropdown">
+            <button class="dropdown-button">Watchlist</button>
+            <div class="dropdown-content">
+              <a href="#">
+                 <div class="flex">
+                    <img class="dropdown-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/capsule_616x353.jpg?t=1687959506" alt="">
+                    <p>The Whitcer</p>
+                </div>
+                 </a>
+              <a href="#">
+                <div class="flex">
+                    <img class="dropdown-img" style="height: 50px;" src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg" alt="">
+                    <p>The Queen's Gambit</p>
+                </div>    
+            </a>
+              <a href="#"> 
+                <div class="flex">
+                    <img class="dropdown-img" style="height: 50px;" src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg" alt="">
+                    <p>The Queen's Gambit</p>
+                </div>  
+              </a>
+              <a href="#"> 
+                <div class="flex">
+                    <img class="dropdown-img" style="height: 50px;" src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg" alt="">
+                    <p>The Queen's Gambit</p>
+                </div>  
+              </a>
+              <a href="#"> 
+                <div class="flex">
+                    <img class="dropdown-img" style="height: 50px;" src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg" alt="">
+                    <p>The Queen's Gambit</p>
+                </div>  
+              </a>
+              <a href="#"> 
+                <div class="flex">
+                    <img class="dropdown-img" style="height: 50px;" src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg" alt="">
+                    <p>The Queen's Gambit</p>
+                </div>  
+              </a>
+            </div>
+    </div>
+
+    <button id="openModalButton" >Sign in</button>
+
+    </div>
+    </div>
+
+    
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="modal-close" id="modalClose"> <i  id="hamburger" class="  fa-solid fa-times"></i>  </span>
+          <h2 class="signin-box">Sign in</h2>
+          <p class="signin-p">DO you have an toog account?</p>
+           
+         <label style="display: flex; flex-direction: column; " for=""> <p style="width: 100px;"> Email </p>
+          <input type="email" placeholder="Email"> <br>
+         </label>
+         <label style="display: flex; flex-direction: column; " for=""> <p style="width: 100px;"> Password</p> 
+          <input type="password" placeholder="password"> <br>
+         </label>
+        <div class="flex justify-between " style="margin-left:35px ;">
+          <p class="signup">Sign Up</p>
+          <button id="openModalButton">Sign in</button>
+        </div>
+        </div>
+       
+
+      </div>
+  </header>
+  <main>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next" style="color: #fff; width: 50px; height: 50px; "></div>
+      <div class="swiper-button-prev" style="color: #fff; width: 50px; height: 50px; "></div>
+
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-hover ">
+
+            <img src="./img/sliderimg.png" alt="">
+            <div class="flex hover-div-slider">
+              <button class="slider-button"><i class="fa-regular fa-heart"></i></button>
+              <button class="slider-button"><i class="fa-brands fa-google-play"></i></button>
+              <button class="slider-button"><i class="fa-regular fa-thumbs-down"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next " style="color: #fff; width: 50px; height: 50px;"></div>
+      <div class="swiper-button-prev  " style="color: #fff; width: 50px; height: 50px; "></div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
